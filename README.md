@@ -1,6 +1,16 @@
 # Python Text Adventure Game
 This is a Python CLI game application, where players get promts to choose from to progress in a journey.
 
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Game Mechanics](#game-mechanics)
+- [Features](#features)
+- [Support](#support)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
+
 ## Installation
 Instructions on how to setup the game
 
