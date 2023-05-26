@@ -23,15 +23,13 @@ lint:
   stage: lint
   script:
     - echo "Linting placeholder"
-  only:
-    - merge_requests
-    - main
+  rules:
+    - exists: false
 
 # Placeholder
 deploy-test:
   stage: deploy
   script:
     - echo "Deploying application"
-  only:
-    - merge_requests
-    - main
+  rules:
+    - exists: false
