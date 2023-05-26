@@ -20,7 +20,7 @@ build:
 
 # Placeholder
 lint:
-  stage: test
+  stage: lint
   script:
     - echo "Linting placeholder"
   only:
