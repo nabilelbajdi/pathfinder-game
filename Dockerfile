@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 # COPY requirements.txt /usr/src/app/
 
 # Install dependencies (--no-cache-dir -r requirements.txt)
-RUN pip install
+# RUN pip install
 
 # Copy the rest of the application to container
 COPY . /usr/src/app
