@@ -22,16 +22,16 @@ build:
 lint:
   stage: lint
   script:
-    - echo "Linting placeholder"
-  only:
-    - merge_requests
-    - main
+    - echo "Running linting..."
+  rules:
+    - exists:
+        - "$SKIP_LINT"
 
 # Placeholder
-deploy-test:
+deploy:
   stage: deploy
   script:
-    - echo "Deploying application"
-  only:
-    - merge_requests
-    - main
+    - echo "Deploying..."
+  rules:
+    - exists:
+        - "$SKIP_DEPLOY"
