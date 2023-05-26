@@ -24,7 +24,8 @@ lint:
   script:
     - echo "Running linting..."
   rules:
-    - exists: false
+    - exists:
+        - "$SKIP_LINT"
 
 # Placeholder
 deploy:
@@ -32,4 +33,5 @@ deploy:
   script:
     - echo "Deploying..."
   rules:
-    - exists: false
+    - exists:
+        - "$SKIP_DEPLOY"
