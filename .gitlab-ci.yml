@@ -22,14 +22,14 @@ build:
 lint:
   stage: lint
   script:
-    - echo "Linting placeholder"
+    - echo "Running linting..."
   rules:
     - exists: false
 
 # Placeholder
-deploy-test:
+deploy:
   stage: deploy
   script:
-    - echo "Deploying application"
+    - echo "Deploying..."
   rules:
     - exists: false
