@@ -17,14 +17,16 @@ build:
   only:
     - main
 
-# Placeholder
 lint:
   stage: lint
+  image: python:3.9
+  before_script:
+    - pip install -r requirements.txt
   script:
-    - echo "Running linting..."
-  rules:
-    - exists:
-        - "$SKIP_LINT"
+    - python -m pip install --upgrade pip
+    - pip install pep8
+    - pep8 game.py
+  allow_failure: true
 
 # Placeholder
 deploy:
