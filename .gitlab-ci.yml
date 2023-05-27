@@ -26,7 +26,7 @@ lint:
     - python -m pip install --upgrade pip
     - pip install pep8
     - pep8 game.py
-allow_failure: true
+  allow_failure: true
 
 # Placeholder
 deploy:
