@@ -49,11 +49,49 @@ def act1():
             act2_cave()
             break
         else:
-            print("Invalid choice. Please type one of the following: forest/beach/cave")
+            print("Invalid choice. Please choose either 'forest', 'beach' or 'cave'.")
 
 def act2_forest():
     typewriter_print("Act 2: The Magical Creature\n")
-    # Forest story
+    typewriter_print("You enter the enchanted forest and encounter a mythical creature known as the Moon Wolf.")
+    typewriter_print("The Moon Wolf possesses a powerful artifact but needs your help to heal its injured companion.")
+    typewriter_print("To heal the companion and earn the Moon Wolf's trust, you must embark on a quest to collect a luminescent mushroom.")
+
+    # Call the quest function
+    moon_wolf_quest()
+
+def moon_wolf_quest():
+    typewriter_print("The Moon Wolf provides you with a clue to find the luminescent mushroom:")
+    typewriter_print("Listen closely, for the path to the mushroom lies in the moon's gentle glow.")
+    typewriter_print("As you embark on your journey to find the mushroom, you find yourself at a crossroad, with two paths before you.")
+    typewriter_print("One path is illuminated by a soft, silver light, while the other is engulfed in darkness.")
+
+    # Prompt the player to choose a path
+    path_choice = input("Which path do you choose? (illuminated/dark) ")
+
+    if path_choice == "illuminated":
+        typewriter_print("You follow the illuminated path, guided by the moon's gentle glow.")
+        typewriter_print("As you venture deeper into the forest, you suddenly hear a familiar howl.")
+        typewriter_print("You realize that you have unknowingly circled back to the Moon Wolf.")
+        typewriter_print("The Moon Wolf acknowledges your efforts and rewards you with the luminescent mushroom.")
+        typewriter_print("Congratulations! You have completed the quest and obtained the luminescent mushroom.")
+        
+        # Transition to Act 3 for the forest story
+        act3_forest()
+
+    elif path_choice == "dark":
+        typewriter_print("You choose the dark path, but it leads you into a treacherous maze of thorns and dangers.")
+        typewriter_print("Unable to find your way out, you succumb to the darkness.")
+        typewriter_print("Game over.")
+        # Should game end here or allow option to restart?
+
+    else:
+        typewriter_print("Invalid choice. Please choose either 'illuminated' or 'dark'.")
+
+# Act 3: The Final Confrontation
+def act3_forest():
+    typewriter_print("Act 3: The Final Chapter\n")
+    # Act 3 forest story and gameplay
 
 def act2_beach():
     typewriter_print("Act 2: The Secret Message\n")
