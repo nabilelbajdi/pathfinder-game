@@ -1,6 +1,7 @@
 import os
 import sys
 import time
+import random
 
 # Function to give a typewriter effect for print statements
 def typewriter_print(text):
@@ -152,7 +153,38 @@ def act3_beach(reward_keyword):
 
 def act2_cave():
     typewriter_print("Act 2: The Hidden Artifact\n")
-    # Cave story
+    typewriter_print("As you delve deeper into the dark cave, your eyes catch a glimpse of some strange scribbled words on the wall.")
+    typewriter_print("The letters are jumbled and seem to form an anagram. There is a hidden message waiting to be deciphered.")
+
+    word = "SECRET"
+    
+    while True:
+        scrambled_word = "".join(random.sample(word, len(word)))  # Randomly shuffle the letters
+        typewriter_print("Scrambled word: " + scrambled_word)
+        
+        choice = input("Enter the word to decipher it, or type 'give up' to exit: ")
+
+        if choice.lower() == word.lower():
+            typewriter_print("As if by magic, the scribbled words glow with an ethereal light, revealing a hidden entrance.")
+            typewriter_print("You confidently step through the entrance, ready for what lies ahead.")
+            time.sleep(2)
+            clear_screen()
+            act3_cave()
+            break
+        
+        if choice.lower() == "give up":
+            typewriter_print("You decide to give up on deciphering the word.")
+            typewriter_print("The cave remains silent, and a feeling of disappointment washes over you.")
+            time.sleep(2)
+            clear_screen()
+            game_over()
+
+        typewriter_print("That is not the correct word. Try again.")
+
+def act3_cave():
+    typewriter_print("Act 3: The Final Confrontation\n")
+    typewriter_print("Placeholder for Act 3: The Final Confrontation")
+    # Act 3 cave story
 
 # Calling the functions
 start_game()
