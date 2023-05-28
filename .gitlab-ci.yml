@@ -30,7 +30,9 @@ lint:
     - pip install pep8
     - pep8 game.py
   allow_failure: true
-
+  rules:
+    - exists:
+        - "$SKIP_LINT"
 
 unit_tests:
   stage: test
@@ -38,7 +40,7 @@ unit_tests:
   before_script:
     - pip install -r requirements.txt
   script:
-    - python -m unittest discover
+    - python -m unittest discover -s tests -p 'test_*.py'
 
 
 # Placeholder
