@@ -3,6 +3,7 @@ import sys
 import time
 import random
 
+
 # Function to give a typewriter effect for print statements
 def typewriter_print(text):
     for char in text:
@@ -10,6 +11,7 @@ def typewriter_print(text):
         sys.stdout.flush()
         time.sleep(0.03)  # Typing speed
     print()  # This will move to the next line after printing the whole text
+
 
 def clear_screen():
     # Clear the terminal screen after the welcome message above
@@ -21,11 +23,14 @@ def clear_screen():
         # For unsupported operating systems, it will do nothing.
         pass
 
+
 # Prints welcome message and instructions for the game when starting it
 def start_game():
-    typewriter_print("Welcome to the Text Adventure Game! This is an interactive text-based adventure game that will take you through a journey.")
-    typewriter_print("You will be prompoted with options that will dictate your journey. ")
-    input("Press Enter to start the game ")
+    typewriter_print("Welcome to Pathfinder!")
+    typewriter_print("Prepare yourself for an exciting and immersive text-based adventure that will take you on a thrilling journey.")
+    typewriter_print("Throughout the game, you will face choices that shape your destiny.")
+    typewriter_print("Your decisions will determine the outcome of your adventure, so choose wisely!")
+    input("Press Enter when you are ready to embark on your journey ")
 
 # Act 1: The Mysterious Island
 def act1():

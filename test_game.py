@@ -24,7 +24,7 @@ class TestTypewriterPrint(unittest.TestCase):
         self.assertEqual(output, text)
 
 def start_game():
-    typewriter_print("Welcome to the Text Adventure Game! This is an interactive text-based adventure game that will take you through a journey.")
+    typewriter_print("Welcome to Pathfinder!")
 
 class TestGame(unittest.TestCase):
     def test_start_game(self):
@@ -37,7 +37,7 @@ class TestGame(unittest.TestCase):
 
         output = captured_output.getvalue().strip() # Retrieves the value stored in the StringIO object (captured_output) as a string and stores it in output.
 
-        self.assertEqual(output, "Welcome to the Text Adventure Game! This is an interactive text-based adventure game that will take you through a journey.")  # Checks if the output matches the expected value.
+        self.assertEqual(output, "Welcome to Pathfinder!")  # Checks if the output matches the expected value.
 
     def test_act2_forest(self):
         # Same setup as start_game(), therefore skipping this test
