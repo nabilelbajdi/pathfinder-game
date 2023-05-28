@@ -15,9 +15,9 @@ build:
     - docker push $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
     - docker push $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG
     - docker push $CI_REGISTRY_IMAGE:latest
-  rules:
-    - exists: 
-      - $SKIP_BUILD
+#  rules:
+#    - exists: 
+#      - $SKIP_BUILD
 
 lint:
   stage: lint
@@ -29,9 +29,9 @@ lint:
     - pip install pep8
     - pep8 game.py
   allow_failure: true
-  rules:
-    - exists: 
-      - $SKIP_LINT
+#  rules:
+#    - exists: 
+#      - $SKIP_LINT
 
 unit_tests:
   stage: test
@@ -40,9 +40,9 @@ unit_tests:
     - pip install -r requirements.txt
   script:
     - python -m unittest discover -s tests -p 'test_*.py'
-  rules:
-    - exists: 
-      - $SKIP_TEST
+#  rules:
+#    - exists: 
+#      - $SKIP_TEST
 
 # Placeholder
 deploy:
