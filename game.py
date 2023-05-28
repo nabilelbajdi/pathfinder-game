@@ -8,7 +8,7 @@ def typewriter_print(text):
     for char in text:
         sys.stdout.write(char)
         sys.stdout.flush()
-        time.sleep(0.01)  # Typing speed
+        time.sleep(0.03)  # Typing speed
     print()  # This will move to the next line after printing the whole text
 
 def clear_screen():
