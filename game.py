@@ -167,6 +167,11 @@ def act2_beach():
                 typewriter_print("Your adventure ends here, consumed by the unknown perils of the deep sea.")
                 typewriter_print("Game Over")
                 sys.exit(0) # Quit game (alternatively ask player to retry)
+            
+            # Show the riddle again when the player chooses to try again
+            clear_screen()
+            typewriter_print("Here's the riddle again:")
+            typewriter_print("'I can be gentle or brutal, shape landscapes or quench your thirst, and I'm essential for all life on Earth—what am I?'")
 
 
 # Act 3: The Water Portal - Beach Path
