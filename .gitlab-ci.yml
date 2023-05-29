@@ -40,9 +40,9 @@ unit_tests:
     - pip install -r requirements.txt
   script:
     python -m unittest discover -p 'test*.py'
-#  rules:
-#    - exists: 
-#      - $SKIP_TEST
+  rules:
+    - exists: 
+      - $SKIP_TEST
 
 # Placeholder
 deploy:
