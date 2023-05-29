@@ -112,6 +112,7 @@ def moon_wolf_quest():
             typewriter_print("You choose the dark path, but it leads you into a treacherous maze of thorns and dangers.")
             typewriter_print("Unable to find your way out, you succumb to the darkness.")
             typewriter_print("Game over.")
+            sys.exit(0) # Quit game (alternatively ask player to retry)
             # UNFINISHED: Should game end here or allow option to restart?
         else:
             clear_screen()
