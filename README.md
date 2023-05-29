@@ -6,7 +6,6 @@ This is a Python CLI game application, where players are introduced to a story t
 - [Usage](#usage)
 - [Game Mechanics](#game-mechanics)
 - [Features](#features)
-- [Support](#support)
 - [Roadmap](#roadmap)
 - [Sprint 2](#sprint-2)
 
@@ -43,9 +42,6 @@ Features that have been implemented:
 * Quests and puzzles to solve.
 * Clues and hints for progression.
 * Multiple endings based on player choices.
-
-## Support
-For any questions or assistance, please contact nabil.elbajdi@chasacademy.se
 
 ## Roadmap 
 Future updates and releases may include the following:
