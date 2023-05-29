@@ -15,8 +15,6 @@ This is a Python CLI game application, where players are introduced to a story t
 To set up the game, follow these instructions:
 1. Clone the repository to your local machine.
 2. Navigate to the cloned directory.
-3. Install any necessary dependencies.
-4. Ensure that your system meets the game's requirements.
 
 ## Usage
 1. Ensure you have Python installed on your machine.
