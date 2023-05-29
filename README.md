@@ -64,5 +64,4 @@ Future updates and releases may include the following:
 Features to be implemented for Sprint 2
 * Finish Act 3 for all three paths (forest, beach, cave)
 * Option to either restart or exit the game when "Game Over"
-* If possible and not complicated, allow players to adjust typewriter speed or remove it completely.
 * Address any bugs that arise
