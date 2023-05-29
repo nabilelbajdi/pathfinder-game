@@ -6,14 +6,21 @@ import random
 
 # Function to give a typewriter effect for print statements
 def typewriter_print(text):
+    """
+    The typwriter_effect function displays one character at a time with a certain speed. This adds a layer of immersion to the game.
+    """
     for char in text:
         sys.stdout.write(char)
         sys.stdout.flush()
         time.sleep(0.03)  # Typing speed
-    print() # This will move to the next line after printing the whole text
+    print() # This will move to the next line after printing the whole text   
+
 
 # Function for clearing the terminal
 def clear_screen():
+    """
+    The clear_screen function clears the terminal. It's used to give a clean output and reduce clutter.
+    """
     if os.name == 'posix':  # For UNIX/Linux/MacOS
         os.system('clear')
     elif os.name == 'nt':  # For Windows
@@ -25,6 +32,9 @@ def clear_screen():
 
 # Prints an overview of the game when starting the application
 def start_game():
+    """
+    The start_game function will introduce the player to the game and give an overview of the game.
+    """
     typewriter_print("Welcome to Pathfinder!")
     typewriter_print("Prepare yourself for an immersive text-based adventure that will take you on a journey.")
     typewriter_print("Throughout the game, you will face choices that shape your destiny.")
