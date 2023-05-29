@@ -1,5 +1,5 @@
-# Python Text Adventure Game
-This is a Python CLI game application, where players get promts to choose from to progress in a journey.
+# Pathfinder: A Python CLI Text Adventure Game
+This is a Python CLI game application, where players are introduced to a story that they can shape based on choices made.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -8,15 +8,11 @@ This is a Python CLI game application, where players get promts to choose from t
 - [Features](#features)
 - [Support](#support)
 - [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 To set up the game, follow these instructions:
 1. Clone the repository to your local machine.
 2. Navigate to the cloned directory.
-3. Install any necessary dependencies.
-4. Ensure that your system meets the game's requirements.
 
 ## Usage
 1. Ensure you have Python installed on your machine.
@@ -31,7 +27,6 @@ To set up the game, follow these instructions:
 10. Enjoy the adventure and see where your choices lead you!
 
 ## Game Mechanism
-The game operates on the following mechanics:
 
 * The game presents a text-based interface where players make choices to progress.
 * Players are presented with different paths and options, leading to unique storylines.
@@ -39,10 +34,11 @@ The game operates on the following mechanics:
 * Clear screen: The game clears the terminal screen for better readability and presentation.
 
 ## Features
+Features that have been implemented:
 * Welcome message and game instructions.
 * Multiple acts and storylines.
 * Unique settings and environments (e.g., forest, beach, cave).
-* Interaction with mythical creatures.
+* Interaction with NPC.
 * Quests and puzzles to solve.
 * Clues and hints for progression.
 * Multiple endings based on player choices.
@@ -50,16 +46,22 @@ The game operates on the following mechanics:
 ## Support
 For any questions or assistance, please contact nabil.elbajdi@chasacademy.se
 
-## Roadmap
+## Roadmap 
 Future updates and releases may include the following:
-* Additional acts and storylines.
+* Additional acts/storylines/paths.
 * Expanded game mechanics and interactions.
 * Improved graphical elements.
 * Enhanced sound effects and music.
+* Inventory system
+* Turn Based Combat Mechanics (e.g. Boss Fights)
+* Dialogue
+* Choosing difficulty (e.g affecting puzzles, riddles, boss fights)
+* Achievement System/Leaderboard
+* Trophy/Challenges system
 
-## Contributing
-- Open to contribution? Requirements for contribution?
-- Documentation on how to get started?
-- Commands for linting or running tests?
-
-## License
+## Sprint 2
+Features to be implemented for Sprint 2
+* Finish Act 3 for all three paths (forest, beach, cave)
+* Option to either restart or exit the game when "Game Over"
+* If possible and not complicated, allow players to adjust typewriter speed or remove it completely.
+* Address any bugs that arise
