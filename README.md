@@ -62,6 +62,7 @@ Future updates and releases may include the following:
 
 ## Sprint 2
 Features to be implemented for Sprint 2
-* Finish Act 3 for all three paths (forest, beach, cave)
+* Finish Act 3 for all three paths (forest, beach, cave) 
+    * Decide on ending (can be very short)
 * Option to either restart or exit the game when "Game Over"
 * Address any bugs that arise
