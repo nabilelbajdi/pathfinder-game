@@ -10,7 +10,7 @@ def typewriter_print(text):
         sys.stdout.write(char)
         sys.stdout.flush()
         time.sleep(0.03)  # Typing speed
-    print()  # This will move to the next line after printing the whole text
+    print() # This will move to the next line after printing the whole text
 
 
 def clear_screen():
@@ -63,6 +63,7 @@ def act1():
             print("Invalid choice. Please choose either 'forest', 'beach' or 'cave'.")
 
 
+# Act 2: The Magical Creature - Forest Path
 def act2_forest():
     typewriter_print("Act 2: The Magical Creature\n")
     typewriter_print("You enter the enchanted forest and encounter a mythical creature known as the Moon Wolf.")
@@ -73,7 +74,7 @@ def act2_forest():
     # Call the quest function
     moon_wolf_quest()
 
-
+# Moon Wolf Quest as part of Act 2: The Magical Creature
 def moon_wolf_quest():
     typewriter_print("The Moon Wolf provides you with a clue to find the luminescent mushroom:")
     typewriter_print("Listen closely, for the path to the mushroom lies in the moon's gentle glow.")
@@ -107,12 +108,13 @@ def moon_wolf_quest():
             typewriter_print("Invalid choice. Please choose either 'illuminated' or 'dark'.")
 
 
-# Act 3: The Final Confrontation
+# Act 3: The Final Confrontation - Forest Path
 def act3_forest():
     typewriter_print("Act 3: The Final Chapter\n")
     # Act 3 forest story and gameplay
 
 
+# Act 2: The Secret Message - Beach Path
 def act2_beach():
     typewriter_print("Act 2: The Secret Message\n")
     typewriter_print("You follow the path that leads to the beach, drawn to the soothing sound of the waves.")
@@ -158,16 +160,19 @@ def act2_beach():
                 sys.exit(0) # Quit game (alternatively ask player to retry)
 
 
+# Act 3: The Water Portal - Beach Path
 def act3_beach(reward_keyword):
     typewriter_print("Act 3: The Water Portal\n")
     # Act 3 beach story and gamepley
 
 
+# Act 2: The Hidden Artifact - Cave Path
 def act2_cave():
     typewriter_print("Act 2: The Hidden Artifact\n")
     typewriter_print("As you delve deeper into the dark cave, your eyes catch a glimpse of some strange scribbled words on the wall.")
     typewriter_print("The letters are scribbled and seem to form an anagram. There is a hidden message waiting to be deciphered.")
 
+    # The deciphered word
     word = "SECRET"
     
     while True:
@@ -195,7 +200,7 @@ def act2_cave():
 
         typewriter_print("That is not the correct word. Try again.")
 
-
+# Act 3: The Final Confrontation - Cave Path
 def act3_cave():
     typewriter_print("Act 3: The Final Confrontation\n")
     # Act 3 cave story
