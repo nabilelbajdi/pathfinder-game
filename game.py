@@ -47,8 +47,8 @@ def act1():
     typewriter_print("Act 1: The Mysterious Island\n")
     typewriter_print("After a stormy voyage in the atlantic oceaen, you find yourself stranded on a deserted island.")
     typewriter_print("As you explore the island, you find three different paths ahead of you:")
-    typewriter_print("1. A dense and mysterious forest, with tall trees, an earthy scent and a distans sound of wildlife.")
-    typewriter_print("2. A breathtaking beach with soft, golden sands. The soun of the gentle waves fill you with tranquility.")
+    typewriter_print("1. A dense and mysterious forest, with tall trees, an earthy scent and a distant sound of wildlife.")
+    typewriter_print("2. A breathtaking beach with soft, golden sands. The sound of the gentle waves fill you with tranquility.")
     typewriter_print("3. An entrance to an ancient and ominous cave, shrouded in haunting silence yet filled with muystery.")
 
     # Prompt the player to choose a path
@@ -78,6 +78,7 @@ def act2_forest():
     typewriter_print("You enter the enchanted forest and encounter a mythical creature known as the Moon Wolf.")
     typewriter_print("The Moon Wolf possesses a powerful artifact but needs your help to heal its injuries.")
     typewriter_print("To heal the Moon Wolf and earn the its trust, you must embark on a quest to collect a luminescent mushroom.")
+    # UNFINISHED: Ask player to press Enter when ready to start quest
     clear_screen()
 
     # Call the quest function
@@ -85,6 +86,7 @@ def act2_forest():
 
 # Moon Wolf Quest function, as part of Act 2: The Magical Creature
 def moon_wolf_quest():
+    typewriter_print("The Moon Wolf Quest\n")
     typewriter_print("The Moon Wolf provides you with a clue to find the luminescent mushroom:")
     typewriter_print("Listen closely, for the path to the mushroom lies in the moon's gentle glow.")
     typewriter_print("As you embark on your journey to find the mushroom, you find yourself at a crossroad, with two paths before you.")
@@ -199,7 +201,7 @@ def act2_cave():
         if choice.lower() == word.lower():
             typewriter_print("The scribbled words glow with an ethereal blue light, revealing a hidden entrance.")
             typewriter_print("You confidently step through the entrance, ready for what lies ahead.")
-            time.sleep(2)
+            time.sleep(1)
             clear_screen()
             act3_cave()
             break
