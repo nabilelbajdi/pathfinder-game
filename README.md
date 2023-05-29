@@ -8,6 +8,7 @@ This is a Python CLI game application, where players are introduced to a story t
 - [Features](#features)
 - [Support](#support)
 - [Roadmap](#roadmap)
+- [Sprint 2](#sprint-2)
 
 ## Installation
 To set up the game, follow these instructions:
