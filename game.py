@@ -12,9 +12,8 @@ def typewriter_print(text):
         time.sleep(0.03)  # Typing speed
     print() # This will move to the next line after printing the whole text
 
-
+# Function for clearing the terminal
 def clear_screen():
-    # Clear the terminal screen after the welcome message above
     if os.name == 'posix':  # For UNIX/Linux/MacOS
         os.system('clear')
     elif os.name == 'nt':  # For Windows
@@ -24,7 +23,7 @@ def clear_screen():
         pass
 
 
-# Prints welcome message and instructions for the game when starting it
+# Prints an overview of the game when starting the application
 def start_game():
     typewriter_print("Welcome to Pathfinder!")
     typewriter_print("Prepare yourself for an immersive text-based adventure that will take you on a journey.")
@@ -42,7 +41,7 @@ def act1():
     typewriter_print("2. A breathtaking beach with soft, golden sands. The soun of the gentle waves fill you with tranquility.")
     typewriter_print("3. An entrance to an ancient and ominous cave, shrouded in haunting silence yet filled with muystery.")
 
-
+    # Prompt the player to choose a path
     while True:
         choice = input("Which path do you choose? (forest/beach/cave) ")
 
@@ -74,14 +73,13 @@ def act2_forest():
     # Call the quest function
     moon_wolf_quest()
 
-# Moon Wolf Quest as part of Act 2: The Magical Creature
+# Moon Wolf Quest function, as part of Act 2: The Magical Creature
 def moon_wolf_quest():
     typewriter_print("The Moon Wolf provides you with a clue to find the luminescent mushroom:")
     typewriter_print("Listen closely, for the path to the mushroom lies in the moon's gentle glow.")
     typewriter_print("As you embark on your journey to find the mushroom, you find yourself at a crossroad, with two paths before you.")
     typewriter_print("One path is illuminated by a soft, silver light, while the other is engulfed in darkness.")
 
-    # Prompt the player to choose a path
     while True:
         path_choice = input("Which path do you choose? (illuminated/dark) ")
 
@@ -94,7 +92,7 @@ def moon_wolf_quest():
             typewriter_print("Congratulations! You have completed the quest and obtained the luminescent mushroom.")
             time.sleep(1)  # Slight pause before transitioning
             clear_screen()
-            # Transition to Act 3 for the forest story
+            # Transition to Act 3 for the forest path
             act3_forest()
             break
         elif path_choice == "dark":
@@ -102,7 +100,7 @@ def moon_wolf_quest():
             typewriter_print("You choose the dark path, but it leads you into a treacherous maze of thorns and dangers.")
             typewriter_print("Unable to find your way out, you succumb to the darkness.")
             typewriter_print("Game over.")
-            # Should game end here or allow option to restart?
+            # UNFINISHED: Should game end here or allow option to restart?
         else:
             clear_screen()
             typewriter_print("Invalid choice. Please choose either 'illuminated' or 'dark'.")
@@ -111,7 +109,7 @@ def moon_wolf_quest():
 # Act 3: The Final Confrontation - Forest Path
 def act3_forest():
     typewriter_print("Act 3: The Final Chapter\n")
-    # Act 3 forest story and gameplay
+    # UNFINISHED: Act 3 forest story and gameplay
 
 
 # Act 2: The Secret Message - Beach Path
@@ -123,7 +121,7 @@ def act2_beach():
     typewriter_print("With intrigue, you unroll the paper to reveal a riddle:")
     typewriter_print("'I can be gentle or brutal, shape landscapes or quench your thirst, and I'm essential for all life on Earth—what am I?'")
 
-    # Riddle answer and reward keyword
+    # Riddle answer and reward keyword to advance Act 3: The Water Portal
     riddle_answer = "water"
     reward_keyword = "balance"
 
@@ -157,13 +155,14 @@ def act2_beach():
                 typewriter_print("You decide not to attempt the riddle any further.")
                 typewriter_print("As you continue to relax in the ocean, a massive sea creature rises from the depths and devours you.")
                 typewriter_print("Your adventure ends here, consumed by the unknown perils of the deep sea.")
+                typewriter_print("Game Over")
                 sys.exit(0) # Quit game (alternatively ask player to retry)
 
 
 # Act 3: The Water Portal - Beach Path
 def act3_beach(reward_keyword):
     typewriter_print("Act 3: The Water Portal\n")
-    # Act 3 beach story and gamepley
+    # UNFINISHED: Act 3 beach story and gamepley
 
 
 # Act 2: The Hidden Artifact - Cave Path
@@ -203,7 +202,7 @@ def act2_cave():
 # Act 3: The Final Confrontation - Cave Path
 def act3_cave():
     typewriter_print("Act 3: The Final Confrontation\n")
-    # Act 3 cave story
+    # UNFINISHED: Act 3 cave story and gameplay
 
 
 # Calling the functions
