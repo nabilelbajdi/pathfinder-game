@@ -1,5 +1,5 @@
-# Python Text Adventure Game
-This is a Python CLI game application, where players get promts to choose from to progress in a journey.
+# Pathfinder: A Python CLI Text Adventure Game
+This is a Python CLI game application, where players are introduced to a story that they can shape based on their choices.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -42,7 +42,7 @@ The game operates on the following mechanics:
 * Welcome message and game instructions.
 * Multiple acts and storylines.
 * Unique settings and environments (e.g., forest, beach, cave).
-* Interaction with mythical creatures.
+* Interaction with NPC.
 * Quests and puzzles to solve.
 * Clues and hints for progression.
 * Multiple endings based on player choices.
@@ -52,10 +52,16 @@ For any questions or assistance, please contact nabil.elbajdi@chasacademy.se
 
 ## Roadmap
 Future updates and releases may include the following:
-* Additional acts and storylines.
+* Additional acts/storylines/paths.
 * Expanded game mechanics and interactions.
 * Improved graphical elements.
 * Enhanced sound effects and music.
+* Inventory system
+* Turn Based Combat Mechanics (e.g. Boss Fights)
+* Dialogue
+* Choosing difficulty (e.g affecting puzzles, riddles, boss fights)
+* Achievement System/Leaderboard
+* Trophy/Challenges system
 
 ## Contributing
 - Open to contribution? Requirements for contribution?
